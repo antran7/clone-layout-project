@@ -1,42 +1,42 @@
 .home {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .home-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 30px;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  align-items: center;
 }
 
 .home-header a {
-    margin-right: 20px;
-    text-decoration: inherit;
-    color: black;
-    font-size: 15px;
+  margin-right: 20px;
+  text-decoration: inherit;
+  color: black;
+  font-size: 15px;
 }
 
 .home-header a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .header-right {
-    display: flex;
-    align-items: center;
-    min-width: 20vw;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  min-width: 20vw;
+  justify-content: space-between;
 }
 
 .home-body {
-    flex: 1;
-    display: flex;
-    margin-top: 10%;
-    flex-direction: column;
+  flex: 1;
+  display: flex;
+  margin-top: 10%;
+  flex-direction: column;
 }
 
 .google-logo {
-    height: 130px;
-    object-fit: contain;
+  height: 130px;
+  object-fit: contain;
 }
