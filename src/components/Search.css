@@ -1,42 +1,48 @@
 .search-input {
   display: flex;
   align-items: center;
-  border: 1px solid lightgray;
-  height: 50px;
-  padding: 0 20px;
-  border-radius: 999px;
+  border: 1px solid #dfe1e5;
+  height: 44px;
+  padding: 0 8px 0 16px;
+  border-radius: 24px;
   width: 800px;
-  margin-top: 40px;
-  max-width: 560px;
+  margin-top: 24px;
+  max-width: 584px;
   transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .search-input:hover {
-  background-color: #f1f1f1;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
 }
 
 .search-input:focus-within {
-  background-color: #e0e0e0;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-  border: 1px solid #bebbbb;
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
 }
 
 .search-input > input {
   flex: 1;
-  padding: 0 10px;
-  font-size: medium;
+  padding: 0 8px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.87);
   border: none;
   outline: none;
   background: transparent;
+  line-height: 22px;
+  height: 34px;
 }
 
 .search-input-icon,
 .search-input > .MuiSvgIcon-root {
-  color: rgb(161, 159, 159);
-  margin-right: 10px;
+  color: #9aa0a6;
+  height: 20px;
+  width: 20px;
+  padding: 0 8px;
   cursor: pointer;
-  transition: color 0.3s;
 }
 
 .search-input-icon:hover,
@@ -55,11 +61,10 @@
   border: 1px solid #f8f9fa;
   border-radius: 4px;
   color: #3c4043;
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-size: 14px;
   margin: 11px 4px;
   padding: 0 16px;
-  line-height: 27px;
   height: 36px;
   min-width: 54px;
   text-align: center;
