@@ -43,7 +43,7 @@
   width: 20px;
   padding: 0 8px;
   cursor: pointer;
-  margin: 0 4px;
+  margin: 0 8px;
 }
 
 .search-input-icon:hover,
@@ -52,7 +52,7 @@
 }
 
 .search-input > .MuiSvgIcon-root:nth-last-child(-n + 3) {
-  margin: 0 4px;
+  margin: 0 8px;
 }
 
 .search-icon-wrapper {
@@ -60,7 +60,7 @@
   display: inline-flex;
   align-items: center;
   cursor: pointer;
-  margin: 0 4px;
+  margin: 0 8px;
 }
 
 .search-icon-wrapper:hover::after {

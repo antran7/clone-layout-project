@@ -26,7 +26,10 @@ function Search() {
       <div className="search-input">
         <SearchIcon className="search-input-icon" />
         <input value={input} onChange={(e) => setInput(e.target.value)} />
-        <KeyboardIcon />
+        <KeyboardIcon
+          onClick={() => setShowKeyboard(!showKeyboard)}
+          style={{ cursor: "pointer" }}
+        />
         <div className="search-icon-wrapper" data-tooltip="Search by voice">
           <MicIcon className="google-blue-icon" />
         </div>
