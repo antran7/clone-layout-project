@@ -8,14 +8,21 @@ import { Button } from '@material-ui/core'
 
 
 function Search() {
-    const [input, setInput] = useState("");
+  const [input, setInput] = useState("");
 
+  const search = (e) => {
+    e.preventDefault();
 
-    const search = (e) => {
-        e.preventDefault();
+    console.log("Search:", input);
+  };
 
-        console.log("Search:", input);
-    };
+  return (
+    <form className="search">
+      <div className="search-input">
+        <SearchIcon className="search-input-icon" />
+        <input value={input} onChange={(e) => setInput(e.target.value)} />
+        <MicIcon />
+      </div>
 
     return (
         <form className='search'>
@@ -37,4 +44,4 @@ function Search() {
     )
 }
 
-export default Search
+export default Search;
