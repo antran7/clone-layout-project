@@ -21,8 +21,12 @@ function Search() {
         <SearchIcon className="search-input-icon" />
         <input value={input} onChange={(e) => setInput(e.target.value)} />
         <KeyboardIcon />
-        <MicIcon />
-        <FilterCenterFocusIcon />
+        <div className="search-icon-wrapper" data-tooltip="Search by voice">
+          <MicIcon className="google-blue-icon" />
+        </div>
+        <div className="search-icon-wrapper" data-tooltip="Search by image">
+          <FilterCenterFocusIcon className="google-blue-icon" />
+        </div>
       </div>
 
       <div className="search-button">

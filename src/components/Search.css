@@ -50,6 +50,28 @@
   color: rgb(51, 50, 50);
 }
 
+.search-icon-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-icon-wrapper:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #616161;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 1000;
+}
+
 .search-button {
   margin-top: 30px;
   display: flex;
@@ -70,6 +92,7 @@
   text-align: center;
   cursor: pointer;
   user-select: none;
+  text-transform: capitalize;
 }
 
 .search-button button:hover {
@@ -77,4 +100,9 @@
   background-color: #f8f9fa;
   border: 1px solid #dadce0;
   color: #202124;
+}
+
+.google-blue-icon {
+  color: #4285f4 !important;
+  opacity: 0.85;
 }
