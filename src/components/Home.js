@@ -38,15 +38,16 @@ const Home = () => {
                         anchorEl={anchorEl}
                         open={Boolean(anchorEl)}
                         onClose={handleMenuClose}
+                        className='menu-dropdown'
                     >
                         <MenuItem onClick={handleMenuClose}>
-                            <YouTube style={{ marginRight: 10 }} /> YouTube
+                            <YouTube style={{ marginBottom: 5 }} /> YouTube
                         </MenuItem>
                         <MenuItem onClick={handleMenuClose}>
-                            <MailIcon /> Gmail
+                            <MailIcon style={{ marginBottom: 5 }}/> Gmail
                         </MenuItem>
                         <MenuItem onClick={handleMenuClose}>
-                            <DriveFolderUpload style={{ marginRight: 10 }} /> Drive
+                            <DriveFolderUpload style={{ marginBottom: 5 }} /> Drive
                         </MenuItem>
                     </Menu>
 
