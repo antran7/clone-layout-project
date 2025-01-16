@@ -60,3 +60,53 @@
   padding: 0 15px;
   margin: 5px 0;
 }
+
+.profile-menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.profile-menu h3 {
+  font-size: 15px;
+}
+
+.profile-menu .profile-avatar {
+  width: 70px;
+  height: 70px;
+  margin: 10px 0;
+}
+
+.profile-menu p {
+  font-size: 20px;
+}
+
+.profile-menu .first-button {
+  border: 1px solid #222;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+
+.button-inline {
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.second-button, .third-button {
+  width: 150px; 
+}
+
+.second-button {
+  border-radius: 20px;
+}
+
+.second-button p, .third-button p{
+  font-size: 14px;
+  font-weight: bold;
+  color: #eee;
+  margin-left: 5px;
+}
