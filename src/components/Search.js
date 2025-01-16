@@ -18,31 +18,29 @@ function Search() {
   };
 
   const handleKeyboardInput = (value) => {
-    setInput(value); 
+    setInput(value);
   };
 
   return (
     <form className="search">
       <div className="search-input">
         <SearchIcon className="search-input-icon" />
-        <input
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-        />
+        <input value={input} onChange={(e) => setInput(e.target.value)} />
         <KeyboardIcon
           onClick={() => setShowKeyboard(!showKeyboard)}
           style={{ cursor: "pointer" }}
         />
-        <MicIcon />
-        <FilterCenterFocusIcon />
+        <div className="search-icon-wrapper" data-tooltip="Search by voice">
+          <MicIcon className="google-blue-icon" />
+        </div>
+        <div className="search-icon-wrapper" data-tooltip="Search by image">
+          <FilterCenterFocusIcon className="google-blue-icon" />
+        </div>
       </div>
 
-      {showKeyboard && ( 
+      {showKeyboard && (
         <div className="virtual-keyboard">
-          <Keyboard
-            onChange={handleKeyboardInput}
-            inputName={"searchInput"} 
-          />
+          <Keyboard onChange={handleKeyboardInput} inputName={"searchInput"} />
         </div>
       )}
 
