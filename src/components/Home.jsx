@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./Home.css";
 import { Avatar, Menu, MenuItem, IconButton, Button } from "@mui/material";
-import AppsIcon from "@material-ui/icons/Apps";
+import AppsIcon from "@mui/icons-material/Apps";
 import {
   YouTube,
   DriveFolderUpload,
@@ -22,6 +23,11 @@ import Search from "./Search";
 const Home = () => {
   const [anchorEl, setAnchorEl] = useState(null);
   const [profileMenu, setProfileMenu] = useState(false);
+  const navigate = useNavigate();
+
+  const handleYouTubeClick = () => {
+    navigate("/youtube");
+  };
 
   const handleMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
@@ -145,9 +151,11 @@ const Home = () => {
                 <span className="menu-item-text">Calendar</span>
               </MenuItem>
 
-              <MenuItem onClick={handleMenuClose}>
-                <span className="app-icon icon-chat"></span>
-                <span className="menu-item-text">Chat</span>
+              <MenuItem onClick={handleYouTubeClick}>
+                <div className="icon-container">
+                  <div className="app-icon icon-youtube"></div>
+                </div>
+                <span className="menu-item-text">YouTube</span>
               </MenuItem>
 
               <MenuItem onClick={handleMenuClose}>

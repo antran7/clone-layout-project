@@ -1,0 +1,26 @@
+.youtube {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.youtube__page {
+  display: flex;
+  margin-top: 56px;
+}
+
+.youtube::-webkit-scrollbar {
+  width: 8px;
+}
+
+.youtube::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.youtube::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.youtube::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

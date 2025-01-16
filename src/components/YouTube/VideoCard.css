@@ -1,0 +1,93 @@
+.videoCard {
+  width: 100%;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.videoCard:hover {
+  transform: scale(1.02);
+}
+
+.videoCard__thumbnail {
+  width: 100%;
+  border-radius: 12px;
+  height: 0;
+  padding-top: 56.25%;
+  position: relative;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.videoCard__thumbnail img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.videoCard__info {
+  display: flex;
+  margin-top: 12px;
+  padding-right: 24px;
+}
+
+.videoCard__text {
+  margin-left: 12px;
+  color: #606060;
+}
+
+.videoCard__text > h4 {
+  font-size: 14px;
+  color: #030303;
+  margin-bottom: 4px;
+  font-weight: 500;
+  line-height: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.videoCard__text > p {
+  font-size: 12px;
+  margin: 0;
+  line-height: 18px;
+}
+
+.videoCard__avatar {
+  height: 36px !important;
+  width: 36px !important;
+}
+
+.live-badge {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  background: #cc0000;
+  color: white;
+  padding: 3px 4px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.video-duration {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 3px 4px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.channel-verified {
+  margin-left: 4px;
+  color: #606060;
+  font-size: 14px;
+}

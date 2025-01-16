@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./Search.css";
-import SearchIcon from "@material-ui/icons/Search";
-import MicIcon from "@material-ui/icons/Mic";
+import SearchIcon from "@mui/icons-material/Search";
+import MicIcon from "@mui/icons-material/Mic";
 import KeyboardIcon from "@mui/icons-material/Keyboard";
 import FilterCenterFocusIcon from "@mui/icons-material/FilterCenterFocus";
-import { Button } from "@material-ui/core";
+import { Button } from "@mui/material";
 import Keyboard from "react-simple-keyboard";
 import "react-simple-keyboard/build/css/index.css";
 
