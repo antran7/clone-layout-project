@@ -4,70 +4,93 @@
   background-color: black;
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .shorts__container {
+  width: 400px;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: relative;
 }
 
 .shorts__video {
-  position: relative;
-  width: 315px;
-  height: 100%;
-  background-color: black;
-}
-
-.shorts__video video {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  background-color: black;
 }
 
 .shorts__sidebar {
   position: absolute;
-  right: 10px;
-  bottom: 100px;
+  right: -60px;
+  bottom: 150px;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
 }
 
 .shorts__sidebarButton {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5px 0;
+  gap: 5px;
 }
 
 .shorts__sidebarButton .MuiIconButton-root {
   color: white;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px;
 }
 
 .shorts__sidebarButton p {
   margin: 0;
-  font-size: 12px;
+  font-size: 13px;
+  color: white;
 }
 
 .shorts__details {
   position: absolute;
-  bottom: 20px;
-  left: 10px;
+  bottom: 100px;
+  left: 20px;
   color: white;
   max-width: 80%;
 }
 
 .shorts__details h3 {
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-size: 16px;
+  font-weight: 500;
 }
 
 .shorts__details p {
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   font-size: 14px;
+  color: #aaa;
+}
+
+.shorts__avatar {
+  width: 35px !important;
+  height: 35px !important;
+  margin-right: 10px;
+}
+
+.shorts__creator {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.shorts__subscribe {
+  background-color: #cc0000 !important;
+  color: white !important;
+  text-transform: none !important;
+  padding: 5px 10px !important;
+  font-size: 14px !important;
+  border-radius: 18px !important;
+  margin-left: 10px !important;
 }

@@ -1,6 +1,5 @@
 .recommendedVideos {
   flex: 0.85;
-  background-color: #f9f9f9;
   padding: 0 24px;
   padding-bottom: 0;
 }
@@ -10,6 +9,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   padding: 0;
+  margin-top: 24px;
 }
 
 .filters {
@@ -17,8 +17,6 @@
   align-items: center;
   gap: 12px;
   padding: 12px 0;
-  border-top: 1px solid #f9f9f9;
-  border-bottom: 1px solid #f9f9f9;
   overflow-x: auto;
   margin-top: 0;
 }

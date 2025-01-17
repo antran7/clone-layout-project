@@ -2,6 +2,8 @@ import React from "react";
 import "./RecommendedVideos.css";
 import VideoCard from "./VideoCard";
 import { Button } from "@mui/material";
+import RecommendedShorts from "./RecommecdedShorts";
+import "./RecommendedShorts.css";
 
 function RecommendedVideos() {
   const filters = [
@@ -79,7 +81,7 @@ function RecommendedVideos() {
       timestamp: "1 days ago",
       channelImage:
         "https://yt3.ggpht.com/VVSu9qRC_uvLNCuXrNi8klXkWtj7Qxs4YC_74Z397Jr4NlATsw8mU0ZynR_Pafz1o7r0zBbNsg=s88-c-k-c0x00ffffff-no-rj",
-      channel: "Ocean Pulse",
+      channel: "Đen Vâu",
       image:
         "https://i.ytimg.com/vi/Hqmbo0ROBQw/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBSU7y6ryOPacZ4OeVtfkCV3a0ZGg",
     },
@@ -98,6 +100,7 @@ function RecommendedVideos() {
           </Button>
         ))}
       </div>
+
       <div className="recommendedVideos__videos">
         {videos.map((video, index) => (
           <VideoCard
@@ -112,6 +115,7 @@ function RecommendedVideos() {
           />
         ))}
       </div>
+      <RecommendedShorts />
     </div>
   );
 }
