@@ -270,6 +270,7 @@
 }
 
 .profile-menu {
+  margin-left: -23px;
   padding: 16px;
   min-width: 320px;
 }
