@@ -1,10 +1,18 @@
 import React, { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Avatar, Menu, MenuItem, IconButton, Button } from "@mui/material";
+import { Avatar, Menu, MenuItem, IconButton, Button, Box, Typography } from "@mui/material";
 import LogoutIcon from "@mui/icons-material/Logout";
 import AddIcon from "@mui/icons-material/Add";
 import "./Docs.css";
 import templateData from './data/Template.json';
+import LooksOneIcon from '@mui/icons-material/LooksOne';
+import LooksTwoIcon from '@mui/icons-material/LooksTwo';
+import Looks3Icon from '@mui/icons-material/Looks3';
+import GridViewIcon from '@mui/icons-material/GridView';
+import SortByAlphaIcon from '@mui/icons-material/SortByAlpha';
+import FolderIcon from '@mui/icons-material/Folder';
+import MoreVertIcon from '@mui/icons-material/MoreVert';
+import recentData from './data/Recent.json';
 
 const Docs = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -18,6 +26,13 @@ const Docs = () => {
     setAnchorEl(null);
     setProfileMenu(false);
   };
+
+  const iconComponents = {
+    LooksOneIcon: LooksOneIcon,
+    LooksTwoIcon: LooksTwoIcon,
+    Looks3Icon: Looks3Icon,
+  };
+
   return (
     <div>
       {/* Navbar */}
@@ -188,7 +203,62 @@ const Docs = () => {
         </div>
       </div>
 
-      <div className="docs-recent">Recent documents</div>
+      <div className="recent-documents-container">
+        <div className="recent-header">
+          <Typography className="recent-title">Recent documents</Typography>
+          <div className="recent-controls">
+            <Typography className="owned-by-dropdown">
+              Owned by anyone ▼
+            </Typography>
+            <IconButton size="small">
+              <GridViewIcon className="control-icon" />
+            </IconButton>
+            <IconButton size="small">
+              <SortByAlphaIcon className="control-icon" />
+            </IconButton>
+            <IconButton size="small">
+              <FolderIcon className="control-icon" />
+            </IconButton>
+          </div>
+        </div>
+
+        <div className="documents-grid">
+          {recentData.documents.map((doc) => {
+            const IconComponent = iconComponents[doc.type.icon];
+            
+            return (
+              <div key={doc.id} className="document-card">
+                <div 
+                  className="document-thumbnail"
+                  style={{ backgroundImage: `url(${doc.thumbnail})` }}
+                />
+                
+                <div className="document-info">
+                  <div className="document-header">
+                    <div className="document-title-container">
+                      {IconComponent && (
+                        <IconComponent 
+                          className="document-icon"
+                          style={{ color: doc.type.color }}
+                        />
+                      )}
+                      <Typography className="document-title">
+                        {doc.title}
+                      </Typography>
+                    </div>
+                    <IconButton className="more-button" size="small">
+                      <MoreVertIcon />
+                    </IconButton>
+                  </div>
+                  <Typography className="document-date">
+                    {doc.date}
+                  </Typography>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
     </div>
   );
 };
