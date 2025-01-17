@@ -4,6 +4,7 @@ import { Avatar, Menu, MenuItem, IconButton, Button } from "@mui/material";
 import LogoutIcon from "@mui/icons-material/Logout";
 import AddIcon from "@mui/icons-material/Add";
 import "./Docs.css";
+import templateData from './data/Template.json';
 
 const Docs = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -158,7 +159,35 @@ const Docs = () => {
         </div>
       </div>
 
-      <div className="docs-template">Start a new document</div>
+      <div className="docs-template">
+        <div className="template-header">
+          <div className="start-doc">Start a new document</div>
+          <div className="template-gallery">
+            <button className="template-gallery-btn">
+              Template gallery
+              <span className="arrow-icon">▼</span>
+            </button>
+            <button className="more-options-btn">
+              <span className="more-icon">⋮</span>
+            </button>
+          </div>
+        </div>
+        
+        <div className="template-grid">
+          {templateData.templates.map((template, index) => (
+            <div key={index} className="template-item">
+              <div className="template-preview">
+                <img src={template.imageUrl} alt={template.name} />
+              </div>
+              <div className="template-info">
+                <div className="template-name">{template.name}</div>
+                <div className="template-type">{template.type}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
       <div className="docs-recent">Recent documents</div>
     </div>
   );

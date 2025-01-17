@@ -1,0 +1,40 @@
+{
+    "templates": [
+      {
+        "name": "Blank document",
+        "type": "Basic",
+        "imageUrl": "https://cdn5.vectorstock.com/i/1000x1000/74/19/cross-colorful-icon-isolated-abstract-plus-symbol-vector-21507419.jpg"
+      },
+      {
+        "name": "Essay",
+        "type": "Paperback",
+        "imageUrl": "https://www.mycvstore.com/wp-content/uploads/2019/08/Cover-Letter-Blue-757x1024.jpg"
+      },
+      {
+        "name": "Report",
+        "type": "Simple",
+        "imageUrl": "https://i.pinimg.com/originals/0e/f0/fb/0ef0fbea48c163e72207515520bdf5bd.jpg"
+      },
+      {
+        "name": "Report",
+        "type": "Luxe",
+        "imageUrl": "https://sfforms.org/wp-content/uploads/2023/04/SF-318-Form-Telecommunications-Service-Priority-TSP-System-Service-Confirmation-for-Service-Vendors-Part-2-768x960.png"
+      },
+      {
+        "name": "Resume",
+        "type": "MLA",
+        "imageUrl": "https://resumegenius.com/wp-content/uploads/2020/01/Spearmint-Google-Docs-Resume-Template.png"
+      },
+      {
+        "name": "Book Report",
+        "type": "Reading Rainbow",
+        "imageUrl": "https://img.freepik.com/free-vector/nature-magazine-cover-template-with-photo_23-2147853378.jpg?w=900&t=st=1689452436~exp=1689453036~hmac=dd307803254d14f0d4114f93d645b8f52f362e82f52654bf2f04cca86c08ab43"
+      },
+      {
+        "name": "Class Notes",
+        "type": "Playful",
+        "imageUrl": "https://i.pinimg.com/736x/af/70/23/af70239fec3debe85a8b21053851005f.jpg"
+      }
+    ]
+  }
+  
