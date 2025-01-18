@@ -1,15 +1,15 @@
 .recommendedVideos {
   flex: 0.85;
-  background-color: #f9f9f9;
-  padding: 20px 24px;
+  padding: 0 24px;
   padding-bottom: 0;
 }
 
 .recommendedVideos__videos {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
-  padding: 16px 0;
+  padding: 0;
+  margin-top: 24px;
 }
 
 .filters {
@@ -17,9 +17,8 @@
   align-items: center;
   gap: 12px;
   padding: 12px 0;
-  border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
   overflow-x: auto;
+  margin-top: 0;
 }
 
 .filter-chip {
