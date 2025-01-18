@@ -27,7 +27,7 @@
 .header__center {
   display: flex;
   align-items: center;
-  width: 40%;
+  width: 600px;
   margin: 0 auto;
 }
 

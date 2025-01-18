@@ -2,6 +2,8 @@ import React from "react";
 import "./RecommendedVideos.css";
 import VideoCard from "./VideoCard";
 import { Button } from "@mui/material";
+import RecommendedShorts from "./RecommendedShorts";
+import "./RecommendedShorts.css";
 
 function RecommendedVideos() {
   const filters = [
