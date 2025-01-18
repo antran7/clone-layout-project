@@ -6,24 +6,19 @@
 }
 
 .sidebarRow:hover {
-  background-color: #f2f2f2;
+  background-color: lightgray;
 }
 
 .sidebarRow__icon {
-  width: 28px;
-  height: 28px;
-  margin-right: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  color: #606060;
+  font-size: large !important;
 }
 
 .sidebarRow__title {
   flex: 1;
-  margin-left: 4px;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 20px;
+  margin-left: 20px;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .sidebarRow.selected {
