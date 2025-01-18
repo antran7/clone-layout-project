@@ -35,7 +35,8 @@ function VideoCard({
             )}
           </p>
           <p>
-            {views} • {timestamp}
+            {views} •{" "}
+            {isLive ? <span className="timestamp-live">LIVE</span> : timestamp}
           </p>
         </div>
       </div>
