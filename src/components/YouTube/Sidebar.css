@@ -51,6 +51,10 @@
   line-height: 20px;
 }
 
+.sidebar__section {
+  padding: 8px 0;
+}
+
 .sidebar__section h3 {
   padding: 8px 24px;
   font-size: 16px;
