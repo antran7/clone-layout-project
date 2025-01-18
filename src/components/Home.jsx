@@ -28,6 +28,9 @@ const Home = () => {
   const handleYouTubeClick = () => {
     navigate("/youtube");
   };
+  const handleGmailClick = () => {
+    navigate("/gmail");
+  };
 
   const handleMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
@@ -116,7 +119,7 @@ const Home = () => {
                 <span className="menu-item-text">Account</span>
               </MenuItem>
 
-              <MenuItem onClick={handleMenuClose}>
+              <MenuItem onClick={handleGmailClick}>
                 <span className="app-icon icon-gmail"></span>
                 <span className="menu-item-text">Gmail</span>
               </MenuItem>
