@@ -1,0 +1,49 @@
+.driveContent {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.driveContent__welcome {
+  margin-bottom: 20px;
+  color: #202124;
+}
+
+.driveContent__folders {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 5px; 
+  margin-bottom: 20px;
+}
+
+.driveContent__folder {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e8f0fe;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+}
+
+.driveContent__folder:hover {
+  background-color: #d2e3fc;
+}
+
+.driveContent__table {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.driveContent__table th,
+.driveContent__table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.driveContent__table th {
+  background-color: #f1f3f4;
+  font-weight: bold;
+}

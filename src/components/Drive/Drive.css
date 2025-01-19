@@ -1,0 +1,12 @@
+.drive {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .drive__body {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+  }
+  

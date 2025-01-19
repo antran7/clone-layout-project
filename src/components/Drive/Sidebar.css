@@ -1,0 +1,17 @@
+.sidebar {
+    width: 240px;
+    background-color: #f1f3f4;
+    height: 100vh;
+    padding-top: 20px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .sidebar__item:hover {
+    background-color: #e8f0fe;
+    cursor: pointer;
+  }
+  
+  .sidebar__item .MuiListItemIcon-root {
+    color: #5f6368;
+  }
+  

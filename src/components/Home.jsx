@@ -35,6 +35,9 @@ const Home = () => {
   const handleDocsClick = () => {
     navigate("/docs");
   };
+  const handleDriveClick = () => {
+    navigate("/drive");
+  };
 
   const handleMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
@@ -128,7 +131,7 @@ const Home = () => {
                 <span className="menu-item-text">Gmail</span>
               </MenuItem>
 
-              <MenuItem onClick={handleMenuClose}>
+              <MenuItem onClick={handleDriveClick}>
                 <span className="app-icon icon-drive"></span>
                 <span className="menu-item-text">Drive</span>
               </MenuItem>
