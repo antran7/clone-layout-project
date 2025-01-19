@@ -5,6 +5,7 @@ import Youtube from "./components/YouTube/Youtube";
 import Shorts from "./components/YouTube/Shorts";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Gmail from "./components/Gmail/Gmail";
+import About from "./components/About/About";
 function App() {
   return (
     <div className="App">
@@ -15,6 +16,7 @@ function App() {
           <Route path="/youtube" element={<Youtube />} />
           <Route path="/shorts" element={<Shorts />} />
           <Route path="/gmail" element={<Gmail />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </BrowserRouter>
     </div>
