@@ -24,6 +24,8 @@
     border-radius: 10px;
     display: flex;
     flex: 0.7;
+    margin-bottom: 6%;
+    
 }
 .header_middle input{
     border: 0;
