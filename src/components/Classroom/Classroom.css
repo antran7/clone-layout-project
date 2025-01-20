@@ -1,0 +1,7 @@
+.content-classroom {
+  display: flex;
+  .content-card{
+    margin: 20px;
+    }
+}
+

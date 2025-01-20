@@ -1,0 +1,36 @@
+.container-classroom {
+    width: 280px;
+    height: 100vh;
+    padding: 10px 0;
+    border-right: 1px solid #e0e0e0;
+      margin-left: 30px;
+    span {
+      color: #5f6368;
+      margin: 10px;
+    }
+    li {
+      display: flex;
+      cursor: pointer;
+      .sidebar-icon {
+        color: #5f6368;
+        width: 24px;
+        height: 24px;
+        margin: 10px;
+      }
+    }
+    li:hover {
+      background-color: #e0e0e0;
+      border-radius: 30px;
+    }
+    span {
+      color: #5f6368;
+    }
+    .sidebar-top{
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .sidebar-middle{
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+  }

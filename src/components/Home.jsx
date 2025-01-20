@@ -28,6 +28,9 @@ const Home = () => {
   const handleYouTubeClick = () => {
     navigate("/youtube");
   };
+  const handleClassroomClick = () => {
+    navigate("/classroom");
+  };
   const handleGmailClick = () => {
     navigate("/gmail");
   };
@@ -133,7 +136,7 @@ const Home = () => {
                 <span className="menu-item-text">Drive</span>
               </MenuItem>
 
-              <MenuItem onClick={handleMenuClose}>
+              <MenuItem onClick={handleClassroomClick}>
                 <span className="app-icon icon-classroom"></span>
                 <span className="menu-item-text">Classroom</span>
               </MenuItem>
