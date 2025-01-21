@@ -3,8 +3,6 @@ import React from "react";
 import Home from "./components/Home";
 import Youtube from "./components/YouTube/Youtube";
 import Docs from "./pages/ggdocs/Docs";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 import Shorts from "./components/YouTube/Shorts";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Gmail from "./components/Gmail/Gmail";
@@ -23,7 +21,6 @@ function App() {
           <Route path="/shorts" element={<Shorts />} />
           <Route path="/gmail" element={<Gmail />} />
           <Route path="/drive" element={<Drive />} />
-
           <Route path="/about" element={<About />} />
           <Route path="/classroom" element={<Classroom />} />
         </Routes>
