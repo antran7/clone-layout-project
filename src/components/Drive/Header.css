@@ -1,0 +1,91 @@
+/* Header.css */
+.header-container {
+  width: 100%;
+
+
+.header {
+  background-color: white;
+  color: black;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+ 
+  padding: 8px 20px;
+}
+
+.header__left {
+  display: flex;
+ 
+  justify-content: left;
+  flex: 1;
+  min-width: 150px;
+  margin-bottom: 20px;
+  margin-right: 750px;
+  cursor: pointer;
+  
+}
+
+.header__title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #5f6368;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  width: 30px;
+  height: auto;
+  margin-right: 8px;
+}
+
+.header__search {
+  display: flex;
+  align-items: center;
+  background-color: #f1f3f4;
+  border-radius: 8px;
+  padding: 5px 10px;
+  flex: 2;
+  max-width: 600px;
+  min-width: 300px;
+  justify-content: center;
+  margin-right: 500px;
+}
+
+.header__searchIcon {
+  color: #5f6368;
+}
+
+.header__input {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding-left: 10px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: flex-end;
+  min-width: 150px;
+  margin-bottom: 20px;
+}
+
+.header__appsButton {
+  color: #5f6368;
+  margin-right: 10px;
+}
+
+.header__button {
+  background-color: #1a73e8;
+  color: white;
+  text-transform: none;
+  font-weight: bold;
+}
+
+.header__button:hover {
+  background-color: #1765cc;
+}
+}

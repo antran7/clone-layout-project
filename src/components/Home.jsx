@@ -28,6 +28,19 @@ const Home = () => {
   const handleYouTubeClick = () => {
     navigate("/youtube");
   };
+  const handleClassroomClick = () => {
+    navigate("/classroom");
+  };
+  const handleGmailClick = () => {
+    navigate("/gmail");
+  };
+
+  const handleDocsClick = () => {
+    navigate("/docs");
+  };
+  const handleDriveClick = () => {
+    navigate("/drive");
+  };
 
   const handleMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
@@ -116,22 +129,22 @@ const Home = () => {
                 <span className="menu-item-text">Account</span>
               </MenuItem>
 
-              <MenuItem onClick={handleMenuClose}>
+              <MenuItem onClick={handleGmailClick}>
                 <span className="app-icon icon-gmail"></span>
                 <span className="menu-item-text">Gmail</span>
               </MenuItem>
 
-              <MenuItem onClick={handleMenuClose}>
+              <MenuItem onClick={handleDriveClick}>
                 <span className="app-icon icon-drive"></span>
                 <span className="menu-item-text">Drive</span>
               </MenuItem>
 
-              <MenuItem onClick={handleMenuClose}>
+              <MenuItem onClick={handleClassroomClick}>
                 <span className="app-icon icon-classroom"></span>
                 <span className="menu-item-text">Classroom</span>
               </MenuItem>
 
-              <MenuItem onClick={handleMenuClose}>
+              <MenuItem onClick={handleDocsClick}>
                 <span className="app-icon icon-docs"></span>
                 <span className="menu-item-text">Docs</span>
               </MenuItem>
