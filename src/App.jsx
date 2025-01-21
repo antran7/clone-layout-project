@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Gmail from "./components/Gmail/Gmail";
 import Drive from "./components/Drive/Drive"
 import About from "./components/About/About";
+import Classroom from './components/Classroom/Classroom';
 function App() {
   return (
     <div className="App">
@@ -20,6 +21,8 @@ function App() {
           <Route path="/drive" element={<Drive />} />
           
           <Route path="/about" element={<About />} />
+          <Route path="/classroom" element={<Classroom />} />
+
         </Routes>
       </BrowserRouter>
     </div>
